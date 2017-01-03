@@ -124,6 +124,26 @@ $(document).ready(function(){
 		$(this_line).removeClass("line_on");
 		$(this_txt_erase).removeClass("txt_erase_on");
 	});
-
-
+	
+	/* 이미지멀티선택페이지 셀렉트박스 가로값 설정*/
+	$(document).ready(function() {
+ 		$('.pic_album').change(function(){
+   			$("#width_tmp_option").html($('.pic_album option:selected').text());
+    		$(this).width($("#width_tmp_select").width());  
+ 		});
+	});
+	
+	/* 기본 체크박스(파란배경 하얀체크) */
+	$(".chk_pic").click(function(){
+		var chk_gallery = $(this).parents(".chk_gallery");
+		var chk_lb2 = $(chk_gallery).find(".chk_lb2");
+		if($(this).prop("checked")){
+			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_on.png) no-repeat left center").css("background-size","24px 24px");
+		} else {
+			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_off.png) no-repeat left center").css("background-size","24px 24px");
+		}
+	});
+	
+	
+	
 });

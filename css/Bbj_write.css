@@ -31,13 +31,86 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*--------------------------------------------------- 상세 등록사진창 ---------------------------------------------------*/
 
 /*--------------------------------------------------- 등록유의사항 ---------------------------------------------------*/
-.pop_rg_info{position:relative; width:100%; height:100%;}
-.rg_info_1{position:relative; padding:24px 15px 9px 15px;}
+.pop_rg_info{position:relative; width:100%; height:100%; background:#585c5e;}
+
+.rg_info_1{position:relative; padding:24px 15px 9px 15px; background:#fff;}
 .rg_info_1 .info_list_1{padding-bottom:15px;}
 .rg_info_1 .info_list_1 h2.rg_info_tit{margin-bottom:6px; font-size:14px; letter-spacing:-0.5px;}
 .rg_info_1 .info_list_1 p.rg_info_txt{font-size:13px; line-height:18px; letter-spacing:-0.5px;}
 
-.rg_info_2{position:relative; background:#585c5e; padding:15px 26px;}
+.rg_info_2{position:relative; background:#585c5e; padding:15px 26px 28px 26px;}
 .rg_info_2 p.rg_info_txt2{font-size:13px; line-height:18px; letter-spacing:-0.5px; color:#fff; text-align:center;}
-.rg_info_2 p.rg_info_txt2 span{font-weight:bold; padding:5px 0 20px 0;}
+.rg_info_2 p.rg_info_txt2 span{font-weight:bold; line-height:27px;}
+
+@media(min-width:360px){
+.rg_info_1{padding:24px 24px 9px 24px;}
+.rg_info_1 .info_list_1 h2.rg_info_tit{font-size:15px;}
+.rg_info_1 .info_list_1 p.rg_info_txt{font-size:14px; line-height:20px;}
+.rg_info_2 p.rg_info_txt2{font-size:14px; line-height:18px;}
+}
+
+@media(min-width:414px){
+.rg_info_1{padding:24px 28px 9px 28px;}
+.rg_info_1 .info_list_1 p.rg_info_txt{font-size:14px; line-height:22px;}
+.rg_info_2{padding:30px 54px 28px 54px;}
+}
+
+@media(min-width:768px){
+.rg_info_1{padding:40px 40px 10px 40px;}
+.rg_info_1 .info_list_1{padding-bottom:30px;}
+.rg_info_2{padding:40px 54px 28px 54px;}
+.rg_info_2 p.rg_info_txt2{font-size:13px; line-height:18px; letter-spacing:-0.5px; color:#fff; text-align:center;}
+}
 /*--------------------------------------------------- 등록유의사항 ---------------------------------------------------*/
+
+/*--------------------------------------------------- 등록하기_사진새창보기 ---------------------------------------------------*/
+.header_pt_txt{width:100%; height:100%; line-height:45px; box-sizing:border-box; color:#fff; font-size:18px; text-align:center;}
+.header_pt_cls{position:absolute; right:10px; top:7.5px;}
+.header_pt_cls a{padding:8px 12px 6px 12px; border:1px solid #7accf5; border-radius:4px; box-sizing:border-box; background:#3db5f1; font-size:14px; line-height:14px; color:#fff;}
+.header_pt_cls a:active{position:relative; top:1px;}
+.header_pt_cls a_active{position:relative; top:1px;}
+
+/*.pop_pic_set{position:fixed; width:100%; height:100%; background:#000 url('http://image.club5678.com/imgs/bbjang/img01/img_ver_pic.jpg') 50% 50% no-repeat; background-size:contain;}*/
+.pop_pic_set{position:fixed; width:100%; height:100%; background:#000 url('http://image.club5678.com/imgs/bbjang/img01/img_wid_pic.jpg') 50% 50% no-repeat; background-size:contain;}
+
+.bottom_pic_set{position:absolute;  width:100%; height:auto; bottom:10px;}
+.bottom_pic_set .pic_cncl{float:left; margin-left:10px;}
+.bottom_pic_set .pic_cncl a{padding:8px 30px; background:#f0f3f5; border-radius:4px; font-size:16px; color:#565d61;}
+.bottom_pic_set .pic_cncl a:active{position:relative; background:#f5f7f7; top:1px;}
+.bottom_pic_set .pic_cncl a_active{position:relative; background:#f5f7f7; top:1px;}
+.bottom_pic_set .pic_dlt{float:right; margin-right:10px;}
+.bottom_pic_set .pic_dlt a{padding:8px 30px; background:#8b8b8b; border-radius:4px; font-size:16px; color:#fff;}
+.bottom_pic_set .pic_dlt a:active{position:relative; background:#808080; top:1px;}
+.bottom_pic_set .pic_dlt a_active{position:relative; background:#808080; top:1px;}
+/*--------------------------------------------------- 등록하기_사진새창보기 ---------------------------------------------------*/
+
+
+
+.pop_pic_slct{position:fixed; width:100%; height:100%;}
+
+.header_pic_slct{position:relative; width:auto; height:auto; background:#fff;}
+.header_pic_slct h1.header_slct_txt{padding:12px 0; font-size:16px; color:#5f676b; text-align:center;}
+.header_pic_slct .slct_set{position:relative; margin-bottom:10px;}
+.header_pic_slct .slct_set img{float:left; margin-left:14px;}
+.header_pic_slct .slct_set select{display:inline-block; width:auto; background:url('http://image.club5678.com/imgs/bbjang/img01/ico_slct.png') 100% bottom no-repeat; background-size:7px 7px; margin-left:5px;  border:none; padding-right:10px; font-size:15px; line-height:15px; color:#323638; font-weight:bold; outline:none;}
+#width_tmp_select{display:none;} 
+
+.pic_layout{position:relative; width:100%; height:100%;}
+.pic_layout ul.pic_line1{position:relative; width:100%; height:auto; overflow:auto;}
+.pic_layout ul.pic_line1 li.pic_one{float:left; width:33%; padding-bottom:calc(33% - 24px); background-position:center center; background-size:cover; overflow:hidden;}
+.pic_layout ul.pic_line1 li.mg_05{margin-bottom:0.5%;}
+.pic_layout ul.pic_line1 li.mg_all{margin:0 0.5% 0.5% 0.5%;}
+.pic_layout ul.pic_line1 li input{position:absolute;}
+
+
+.pic_layout ul.pic_line1 li.pic_one .chk_wrap{position:absolute; right:10px; top:10px;}
+.pic_layout ul.pic_line1 li.pic_one .chk_wrap label{display:block; }
+
+.pic_layout ul.pic_line1 li.pic_thumb_1{background:url('http://image.club5678.com/imgs/bbjang/img01/img_ver_pic.jpg') no-repeat;}
+.pic_layout ul.pic_line1 li.pic_thumb_2{background:url('http://image.club5678.com/imgs/bbjang/img01/photo03.jpg')no-repeat;}
+.pic_layout ul.pic_line1 li.pic_thumb_3{background:url('http://image.club5678.com/imgs/bbjang/img01/img_wid_pic.jpg')no-repeat;}
+
+.chk_gallery{position:relative; float:right; top:5px;}
+.chk_gallery .chk_pic {position:absolute; z-index:1; display:block; width:100%; height:100%; opacity:0;}
+.chk_gallery .chk_lb2 {position:relative; display:inline-block; width:auto; height:24px; line-height:24px; padding-left:30px; background:url('http://image.club5678.com/imgs/bbjang/img01/chk_pic_off.png') no-repeat left center; background-size:24px 24px; vertical-align:middle;}
+.chk_gallery .chk_pic:checked ~ .chk_lb2 {position:relative; display:inline-block; width:auto; height:24px; line-height:24px; padding-left:30px; background:url('http://image.club5678.com/imgs/bbjang/img01/chk_pic_on.png') no-repeat left center; background-size:24px 24px; vertical-align:middle;}
