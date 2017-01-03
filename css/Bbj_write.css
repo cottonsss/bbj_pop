@@ -86,16 +86,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 
 
-.pop_pic_slct{position:fixed; width:100%; height:100%;}
+.pop_pic_slct{position:fixed; width:100%; height:100%; overflow:auto;}
 
-.header_pic_slct{position:relative; width:auto; height:auto; background:#fff;}
+.header_pic_slct{position:fixed; width:100%; height:auto; background:#fff; border-bottom:1px solid #757c80; z-index:100;}
 .header_pic_slct h1.header_slct_txt{padding:12px 0; font-size:16px; color:#5f676b; text-align:center;}
 .header_pic_slct .slct_set{position:relative; margin-bottom:10px;}
 .header_pic_slct .slct_set img{float:left; margin-left:14px;}
-.header_pic_slct .slct_set select{display:inline-block; width:auto; background:url('http://image.club5678.com/imgs/bbjang/img01/ico_slct.png') 100% bottom no-repeat; background-size:7px 7px; margin-left:5px;  border:none; padding-right:10px; font-size:15px; line-height:15px; color:#323638; font-weight:bold; outline:none;}
+.header_pic_slct .slct_set select{display:inline-block; width:auto; background:url('http://image.club5678.com/imgs/bbjang/img01/ico_slct.png') 100% bottom no-repeat; background-size:7px 7px; margin-left:5px;  border-radius:0; border:none; padding-right:10px; font-size:15px; line-height:15px; color:#323638; font-weight:bold; outline:none;}
 #width_tmp_select{display:none;} 
 
-.pic_layout{position:relative; width:100%; height:100%;}
+.pic_layout{position:relative; width:100%; height:calc(100% - 114px); top:65px; overflow:auto}
 .pic_layout ul.pic_line1{position:relative; width:100%; height:auto; overflow:auto;}
 .pic_layout ul.pic_line1 li.pic_one{float:left; width:33%; padding-bottom:calc(33% - 24px); background-position:center center; background-size:cover; overflow:hidden;}
 .pic_layout ul.pic_line1 li.mg_05{margin-bottom:0.5%;}
@@ -109,6 +109,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .pic_layout ul.pic_line1 li.pic_thumb_1{background:url('http://image.club5678.com/imgs/bbjang/img01/img_ver_pic.jpg') no-repeat;}
 .pic_layout ul.pic_line1 li.pic_thumb_2{background:url('http://image.club5678.com/imgs/bbjang/img01/photo03.jpg')no-repeat;}
 .pic_layout ul.pic_line1 li.pic_thumb_3{background:url('http://image.club5678.com/imgs/bbjang/img01/img_wid_pic.jpg')no-repeat;}
+
+.bottom_pic_set2{position:fixed; width:100%; padding:7px 0; bottom:0; background:rgba(255,255,255,0.85);}
+.bottom_pic_set2 .btn_pic_cncl{float:left; width:165px; margin-left:10px; text-align:center;}
+.bottom_pic_set2 .btn_pic_cncl a{padding:8px 0; background:#8b8b8b; border-radius:4px; font-size:16px; color:#fff;}
+.bottom_pic_set2 .btn_pic_cncl a:active{position:relative; background:#808080; top:1px;}
+.bottom_pic_set2 .btn_pic_cncl a_active{position:relative; background:#808080; top:1px;}
+.bottom_pic_set2 .btn_pic_ok{float:right; width:165px; margin-right:10px; text-align:center;}
+.bottom_pic_set2 .btn_pic_ok a{padding:8px 0; background:#0ca2ed; border-radius:4px; font-size:16px; color:#fff;}
+.bottom_pic_set2 .btn_pic_ok a:active{position:relative; background:#0b91d4; top:1px;}
+.bottom_pic_set2 .btn_pic_ok a_active{position:relative; background:#0b91d4; top:1px;}
 
 .chk_gallery{position:relative; float:right; top:5px;}
 .chk_gallery .chk_pic {position:absolute; z-index:1; display:block; width:100%; height:100%; opacity:0;}

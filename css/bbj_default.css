@@ -3,6 +3,7 @@
  ** 초기화 **
           */
 html {width:100%; height:100%; margin:0; padding:0; border:0; outline:0; background:transparent; font-family:'bbj-Regular'; font-size:14px; letter-spacing:-0.5px; color:#4d5356; vertical-align:baseline; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+body {width:100%; height:100%; margin:0; padding:0; line-height:1;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display:block;}
 audio,canvas,progress,video {display:inline-block; vertical-align:baseline;}
 audio, canvas, video {display:inline-block; display:inline; **zoom:1;}
@@ -58,37 +59,44 @@ td,th {padding:0;}
           */
 .bg_blue {background-color:#0ca2ed;}       /* 메인 블루 배경 */		  
 .bg_gray {background-color:#d9dddd;}       /* 메인 그레이 배경 */
-.ft_blue {color:#0ca2ed;}       /* 블루 텍스트 */
+.bg_white {background-color:#fff;}        /* 메인 화이트 배경 */
+.ft_blue {color:#0b7fd0;}       /* 블루 텍스트 */
 .ft_navy {color:#004c80;}       /* 네이비 텍스트 */
 
 /*
  ** 뱃지 **
           */
-.month_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#33a381;}
-.rent_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#92992a;}
-.sell_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#257ba1;}
-.buy_badge{display:inline-block; width:40px; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#70369d;}
-.option_badge{display:inline-block; width:auto; height:15px; line-height:15px; font-size:12px; text-align:center; color:#fff; background-color:#8abbd3; border-radius:1px; padding:0 5px;}
+.month_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#33a381; vertical-align:top;}
+.rent_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#92992a; vertical-align:top;}
+.sell_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#257ba1; vertical-align:top;}
+.buy_badge{display:inline-block; width:40px; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#70369d; vertical-align:top;}
+.option_badge{display:inline-block; width:auto; height:15px; line-height:16px; font-size:12px; text-align:center; color:#fff; background-color:#8abbd3; border-radius:1px; padding:0 5px; vertical-align:top;}
 
 /*
  ** 체크박스**
              */
-/* 기본 체크박스(파란배경 하얀체크) */
+/* 기본 체크박스(회색배경 > 파란배경 하얀체크) */
 .chk_wrap {position:relative;}
-.chk_wrap .chk_input {position:absolute; z-index:1; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap .chk_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
 .chk_wrap .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
-.chk_wrap .chk_input:checked ~ .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(../img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
+.chk_wrap .chk_input:checked ~ .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
+
+/* 기본 체크박스(하얀배경 > 파란배경 하얀체크) */
+.chk_wrap02 {position:relative;}
+.chk_wrap02 .chk_input02 {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap02 .chk_lb02 {position:relative; display:block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_off.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
+.chk_wrap02 .chk_input02:checked ~ .chk_lb02 {position:relative; display:inline-block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_on.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
 
 /*
  ** 방부장 기본 css **
           */
-#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto;}
+#wrap {position:relative; top:0; left:0; right:0; width:100%; height:auto; overflow-x:hidden;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
 #header {position:relative; z-index:1000; top:0; left:0; right:0; display:block; width:100%;}
-.ht_50{height:50px;}
-.ht_45{height:45px;}
+.ht_50 {height:50px;}
+.ht_45 {height:45px;}
 #header .btn_back{position:absolute; top:0; left:0; z-index:1; width:40px; height:100%;}
 #header .btn_back a{display:block; width:100%; height:100%; text-indent:-9999px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_back.png) no-repeat center center; background-size:17px 14px;}
 #header .btn_back a:active{background:rgba(0,0,0,0.05) url(http://image.club5678.com/imgs/bbjang/img01/btn_back.png) no-repeat center center; background-size:17px 14px;}
@@ -108,25 +116,26 @@ td,th {padding:0;}
 /* 사진터치 구분 영역 */
 .list_card .list_photo_wrap{position:absolute; top:10px; left:8px; width:95px; height:70px; overflow:hidden;}
 .list_card .list_photo_wrap a{position:relative; display:block; width:100%; height:100%; overflow:hidden;}
-.list_card .list_photo_wrap .sold_out{background:url(../img01/list_sold_out.png) no-repeat center center; background-size:cover;}
+.list_card .list_photo_wrap .sold_out{background:url(http://image.club5678.com/imgs/bbjang/img01/list_sold_out.png) no-repeat center center; background-size:cover;}
 .list_card .list_photo_wrap img{position:relative; z-index:-1; width:100%; height:100%;}
 
 /* 리스트 정보 */
 .list_card .list_intro{position:relative; width:100%; height:auto;}
 .list_card .list_intro a{position:relative; display:block; width:100%; height:100%; padding:10px 8px 0 8px; box-sizing:border-box;}
 .list_card .list_intro a:active{background:rgba(0,0,0,0.05);}
-.list_card .list_intro .top_line{width:100%; height:15px; line-height:15px;}
-.list_card .list_intro .top_line .intro_price{display:inline-block; width:auto; height:15px; line-height:15px; margin-left:8px; font-size:15px; vertical-align:middle;}
-.list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; letter-spacing:-0.5px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
+.list_card .list_intro .top_line{width:100%; height:15px; line-height:15px; overflow:hidden; white-space:nowrap; text-overflow: ellipsis;}
+.list_card .list_intro .top_line .intro_price{margin-left:8px; font-size:15px;}
+.list_card .list_intro .top_line .comple_badge{position:absolute; top:10px; right:-3px; display:inline-block; width:60px; height:20px; line-height:20px; font-size:12px; padding-left:8px; box-sizing:border-box; border-radius:25px 0 0 25px; color:#fff; background-color:#6cb5d9; border-bottom:1px solid #66abcd;}
+.list_card .list_intro .comple_pr{padding-right:50px; box-sizing:border-box;} /* 거래완료뱃지가 있을 경우 top_line에 클래스 추가 */
 .list_card .list_intro .mid_line{width:100%; height:55px;}
 .list_card .list_intro .mid_line .intro_title{width:100%; height:23px; line-height:23px; font-size:15px; color:#596063; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
 .list_card .list_intro .mid_line .intro_txt{display:-webkit-box; width:100%; line-height:16px; font-size:14px; overflow:hidden; text-overflow:ellipsis; word-wrap:break-word; -webkit-box-orient:vertical; -webkit-line-clamp:2;}
-.list_card .list_intro .photo_pl{padding-left:105px; box-sizing:border-box;}
+.list_card .list_intro .photo_pl{padding-left:105px; box-sizing:border-box;} /* 사진이 있을 경우 top_line과 mid_line에 클래스 추가 */
 .list_card .list_intro .bot_line{width:100%; height:auto;}
 .list_card .list_intro .bot_line:after{content:""; display:block; clear:both;}
-.list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px;}
+.list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px; overflow:hidden;}
 .list_card .list_intro .bot_line .intro_time{width:60px; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; text-align:center;}
-.list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(../img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
+.list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
 
 /* 내글 버튼 */
 .list_card .my_line{width:100%; height:auto; border-top:1px solid #dfdfdf;}
