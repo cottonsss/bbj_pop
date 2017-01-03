@@ -43,7 +43,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .rg_info_2 p.rg_info_txt2 span{font-weight:bold; line-height:27px;}
 
 @media(min-width:360px){
-.rg_info_1{padding:24px 24px 9px 24px;}
+.rg_info_1{padding:24px 20px 9px 22px;}
 .rg_info_1 .info_list_1 h2.rg_info_tit{font-size:15px;}
 .rg_info_1 .info_list_1 p.rg_info_txt{font-size:14px; line-height:20px;}
 .rg_info_2 p.rg_info_txt2{font-size:14px; line-height:18px;}
@@ -116,11 +116,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 /* 하단버튼 */
 .bottom_pic_set2{position:fixed; width:100%; padding:7px 0; bottom:0; background:rgba(255,255,255,0.85);}
-.bottom_pic_set2 .btn_pic_cncl{float:left; width:165px; margin-left:10px; text-align:center;}
+.bottom_pic_set2 .btn_pic_cncl{float:left; width:45%; margin-left:10px; text-align:center;}
 .bottom_pic_set2 .btn_pic_cncl a{padding:8px 0; background:#8b8b8b; border-radius:4px; font-size:16px; color:#fff;}
 .bottom_pic_set2 .btn_pic_cncl a:active{position:relative; background:#808080; top:1px;}
 .bottom_pic_set2 .btn_pic_cncl a_active{position:relative; background:#808080; top:1px;}
-.bottom_pic_set2 .btn_pic_ok{float:right; width:165px; margin-right:10px; text-align:center;}
+.bottom_pic_set2 .btn_pic_ok{float:right; width:45%; margin-right:10px; text-align:center;}
 .bottom_pic_set2 .btn_pic_ok a{padding:8px 0; background:#0ca2ed; border-radius:4px; font-size:16px; color:#fff;}
 .bottom_pic_set2 .btn_pic_ok a:active{position:relative; background:#0b91d4; top:1px;}
 .bottom_pic_set2 .btn_pic_ok a_active{position:relative; background:#0b91d4; top:1px;}
@@ -133,4 +133,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .chk_gallery .chk_pic:checked ~ .chk_lb2 {position:relative; display:inline-block; width:auto; height:24px; line-height:24px; padding-left:30px; background:url('http://image.club5678.com/imgs/bbjang/img01/chk_pic_on.png') no-repeat left center; background-size:24px 24px; vertical-align:middle;}
 /* 체크박스 */
 /*--------------------------------------------------- 등록하기_이미지멀티선택업로드 ---------------------------------------------------*/
+
+
+/*--------------------------------------------------- 등록하기_매물종류선택 ---------------------------------------------------*/
+.pop_slct_type{position:relative; width:100%; height:auto; overflow:auto;}
+
+.type_contents{position:relative; width:100%; height:auto; background:#fcfcfc; padding-bottom:20px;}
+.type_contents .type_tit{position:relative; padding:16px 0 10px 10px; font-size:15px; font-weight:bold; color:#373b3d; border-bottom:1px solid #d8d8d8;}
+
+ul.type_list{position:relative; background:#fff;  overflow:auto;}
+ul.type_list li.type_1{float:left; width:50%;  font-size:15px; line-height:15px; color:#4d5356; text-align:center; box-sizing:border-box; border-bottom:1px solid #d8d8d8;}
+ul.type_list li.type_1 a{padding:12px 0;}
+ul.type_list li.type_1 a:active{display:block; background:#0ca2ed; color:#fff; font-weight:bold;}
+ul.type_list li.type_1 a_active{background:#0ca2ed; color:#fff; font-weight:bold;}
+ul.type_list li.type_none{height:40px;}
+ul.type_list li.type_100{width:100%; border-right:none;}
+ul.type_list li:nth-child(odd){border-right:1px solid #d8d8d8;}
+/*--------------------------------------------------- 등록하기_매물종류선택 ---------------------------------------------------*/
+
+/*--------------------------------------------------- 등록하기_주소검색 ---------------------------------------------------*/
+.pop_find_adrs{position:fixed; width:100%; height:100%; background:#ececec;}
+/*--------------------------------------------------- 등록하기_주소검색 ---------------------------------------------------*/
+
+/*--------------------------------------------------- 등록하기_옵션정보선택 ---------------------------------------------------*/
+.pop_slct_option{position:fixed; width:100%; height:100%; background:#fcfcfc;}
+
+.option_contents{position:relative; width:100%; height:auto; background:#fcfcfc; margin-top:10px; border-top:1px solid #d8d8d8;}
+.option_contents ul.type_list li.type_1{text-align:left; padding:10px 0; padding-left:10px;}
+@media(min-width:360px){
+.option_contents ul.type_list li.type_1{padding:12px 0; padding-left:10px;}
+}
+
+/* 하단버튼 */
+.bottom_option{position:fixed; width:100%; padding:12px 0; bottom:0; background:rgba(255,255,255,0.85); box-shadow:0px -3px 5px rgba(0,0,0,0.1);}
+.bottom_option .btn_new{float:left; width:45%; margin-left:10px; text-align:center;}
+.bottom_option .btn_new a{padding:7px 0; background:#fff; border:1px solid #b8bdbf; border-radius:4px; font-size:16px; color:#5f676b;}
+.bottom_option .btn_new a:active{position:relative; background:#aab0b2; border:1px solid #aab0b2; color:#fff; top:1px;}
+.bottom_option .btn_new a_active{position:relative; background:#aab0b2; border:none; color:#fff; top:1px;}
+.bottom_option .btn_confirm{float:right; width:45%; margin-right:10px; text-align:center;}
+.bottom_option .btn_confirm a{padding:8px 0; background:#0ca2ed; border-radius:4px; font-size:16px; color:#fff;}
+.bottom_option .btn_confirm a:active{position:relative; background:#0b91d4; top:1px;}
+.bottom_option .btn_confirm a_active{position:relative; background:#0b91d4; top:1px;}
+/* 하단버튼 */
+/*--------------------------------------------------- 등록하기_옵션정보선택 ---------------------------------------------------*/
 
