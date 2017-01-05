@@ -1,13 +1,50 @@
 @charset "utf-8";
 /* CSS Document */
 /* 팝업 픽스 */
-#pop_wrap {position:fixed; top:0; bottom:0; left:0; right:0; z-index:999; width:100%; height:100%;}
+.pop_wrap {position:fixed; top:0; bottom:0; left:0; right:0; z-index:999; width:100%; height:100%;}
 /* 팝업배경 */
-#pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.6);}
+.pop_bg_modal {position:absolute; width:100%; height:100%; background:rgba(0,0,0,0.6);}
 /* 팝업 중앙 */
-#pop_container {position:fixed; top:50%; height:auto; overflow:hidden; border-radius:10px; background-color:#fff;}
-.wid_90 {left:5%; right:5%; width:90%;}
-.wid_96 {left:2%; right:2%; width:96%;}
+.pop_container {position:fixed; top:50%; left:50%; height:auto; overflow:hidden; border-radius:5px; background-color:#fff;}
 
+.wid_280 {width:280px; margin-left:-140px;}
+.wid_290 {width:290px; margin-left:-145px;}
+.wid_300 {width:300px; margin-left:-150px;}
+
+.mt_55 {margin-top:-55px;}
+.mt_115{margin-top:-115px;}
 .mt_100 {margin-top:-100px;}
 .mt_180 {margin-top:-180px;}
+
+.rd_2{border-radius:4px;}
+
+/*--------------------------------- 방법선택폼 ---------------------------------*/
+ul.pop_slct_mtd {position:relative; height:auto; overflow:auto;}
+ul.pop_slct_mtd li.pop_mtd_1 a{padding:18px 0 17px 0; font-size:19px; line-height:19px; color:#4d5356; text-align:center; border-bottom:1px solid #d5d5d5;}
+ul.pop_slct_mtd li.pop_mtd_1 a:active{background:#f5f5f5;}
+ul.pop_slct_mtd li.pop_mtd_lst{border-bottom:none;}
+/*--------------------------------- 방법선택폼 ---------------------------------*/
+
+/*--------------------------------- 영상팝업 ---------------------------------*/
+.pop_vd{position:relative; height:auto; overflow:hidden;}
+.pop_vd img{margin:12px 0 6px 12px;}
+.pop_vd p.pop_vd_txt{margin-top:10px; font-size:15px; font-weight:bold; line-height:20px; color:#5f676b; text-align:center;}
+.pop_vd p.pop_vd_txt span.vd_txt_color{color:#b533ff;}
+.pop_vd p.pop_vd_txt span.vd_txt_line{font-size:17px; font-weight:bold; line-height:26px;}
+.pop_vd p.pop_vd_txt span.vd_txt_size{font-weight:normal; font-size:13px;}
+
+.pop_vd .pop_vd_call{position:relative; width:256px; height:auto; margin:14px auto;}
+.pop_vd .pop_vd_call a{padding:13.5px 0; background:#0ca2ed; border-radius:4px; font-size:17px; color:#fff; text-align:center;}
+.pop_vd .pop_vd_call a:active{position:relative; top:1px; background:#0b91d4;}
+.pop_vd .pop_vd_call a_active{position:relative; top:1px; background:#0b91d4;}
+/*--------------------------------- 영상팝업 ---------------------------------*/
+
+
+.pop_cplt{position:relative; height:auto; margin:0 auto; text-align:center;}
+.pop_cplt img{margin:10px auto;}
+.pop_cplt_box{position:relative; width:264px; height:auto; margin:0 auto; border-radius:5px;}
+.pop_cplt_box .pop_img_bg{width:264px; height:113px; background:url('http://image.club5678.com/imgs/bbjang/img01/img_pop_cplt.png') no-repeat; background-size:264px 113px;}
+.pop_cplt_box .pop_img_bg p.pop_cplt_tit{padding:14px 0 0 14px; font-size:18px; line-height:25px; color:#fff; text-align:left;}
+.pop_cplt_box .pop_img_bg p.pop_cplt_tit span{color:#fff;}
+.pop_cplt_box .pop_img_bg p.pop_cplt_tit span.cplt_name{font-size:20px; color:#1ca7f8;}
+.pop_cplt_box .pop_img_bg p.pop_cplt_txt{padding:10px 0 0 14px; font-size:18px; line-height:25px; color:#fff; text-align:left;}
