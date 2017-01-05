@@ -1,16 +1,6 @@
 // JavaScript Document
 $(document).ready(function(){
 	/******************** 공통 ********************/
-	/* 기본 체크박스(파란배경 하얀체크) */
-	$(".chk_input").click(function(){
-		var chk_wrap = $(this).parents(".chk_wrap");
-		var chk_lb = $(chk_wrap).find(".chk_lb");
-		if($(this).prop("checked")){
-			$(chk_lb).css("background","url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center").css("background-size","22px 22px");
-		} else {
-			$(chk_lb).css("background","url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center").css("background-size","22px 22px");
-		}
-	});
 	/* 풀페이지 */
 	function full_page(){
 		var window_height =$(window).height();
@@ -108,7 +98,7 @@ $(document).ready(function(){
 		$($(this).find(".ripple")).removeClass("ripple_active");
 	});
 	
-
+	/******************** 로그인페이지 ********************/
 	/* 로그인페이지 라인 컬러 설정 */
 	$(".form_1 input").focusin(function(){
 		var this_form = $(this).closest(".form_1");
@@ -124,6 +114,22 @@ $(document).ready(function(){
 		$(this_line).removeClass("line_on");
 		$(this_txt_erase).removeClass("txt_erase_on");
 	});
+
+	/******************** 상세페이지 ********************/
+	/* 상세페이지 스크랩 버튼 */
+	$(".dt_info_wrap .dt_scrap").click(function(){
+		$(this).toggleClass("dt_scrap_on");
+	});
+	
+	/******************** 매물등록페이지 ********************/
+	/* 네비 탭이동 */
+	$(".nav_wrap li").click(function(){
+		$(".nav_wrap li").removeClass("wt_nav_active");
+		$(".content_wrap").addClass("hidden");
+		var nav_idx = $(this).index(".nav_wrap li");
+		$(".nav_wrap li").eq(nav_idx).addClass("wt_nav_active");
+		$(".content_wrap").eq(nav_idx).removeClass("hidden");
+	});
 	
 	/* 이미지멀티선택페이지 셀렉트박스 가로값 설정*/
 	$(document).ready(function() {
@@ -132,18 +138,5 @@ $(document).ready(function(){
     		$(this).width($("#width_tmp_select").width());  
  		});
 	});
-	
-	/* 기본 체크박스(파란배경 하얀체크) */
-	$(".chk_pic").click(function(){
-		var chk_gallery = $(this).parents(".chk_gallery");
-		var chk_lb2 = $(chk_gallery).find(".chk_lb2");
-		if($(this).prop("checked")){
-			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_on.png) no-repeat left center").css("background-size","24px 24px");
-		} else {
-			$(chk_lb2).css("background","url(http://image.club5678.com/imgs/bbjang/img01/chk_pic_off.png) no-repeat left center").css("background-size","24px 24px");
-		}
-	});
-	
-	
-	
+
 });

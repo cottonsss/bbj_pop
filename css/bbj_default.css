@@ -3,7 +3,7 @@
  ** 초기화 **
           */
 html {width:100%; height:100%; margin:0; padding:0; border:0; outline:0; background:transparent; font-family:'bbj-Regular'; font-size:14px; letter-spacing:-0.5px; color:#4d5356; vertical-align:baseline; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
-body {width:100%; height:100%; margin:0; padding:0; line-height:1;}
+body {width:100%; height:100%; margin:0; padding:0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {display:block;}
 audio,canvas,progress,video {display:inline-block; vertical-align:baseline;}
 audio, canvas, video {display:inline-block; display:inline; **zoom:1;}
@@ -29,6 +29,7 @@ dl, menu, ol, ul {margin:0; padding:0;}
 ol,ul,li {list-style:none;}
 nav ul, nav ol {list-style:none; list-style-image:none;}
 button, input, select, textarea {margin:0; font-size:1em; vertical-align:middle; font-family:'bbj-Regular'; appearance:none; -webkit-appearance:none; -ms-appearance:none; -moz-appearance:none; -o-appearance:none; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
+input::-ms-clear {display: none;}
 select::-ms-expand {display:none;}
 button {overflow:visible; -webkit-tap-highlight-color:rgba(255, 255, 255, 0);}
 button,select {text-transform:none;}
@@ -78,14 +79,14 @@ td,th {padding:0;}
 /* 기본 체크박스(회색배경 > 파란배경 하얀체크) */
 .chk_wrap {position:relative;}
 .chk_wrap .chk_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
-.chk_wrap .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
-.chk_wrap .chk_input:checked ~ .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:22px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
+.chk_wrap .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:23px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
+.chk_wrap .chk_input:checked ~ .chk_lb {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px;}
 
 /* 기본 체크박스(하얀배경 > 파란배경 하얀체크) */
 .chk_wrap02 {position:relative;}
 .chk_wrap02 .chk_input02 {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
-.chk_wrap02 .chk_lb02 {position:relative; display:block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_off.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
-.chk_wrap02 .chk_input02:checked ~ .chk_lb02 {position:relative; display:inline-block; width:auto; height:14px; line-height:14px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_on.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
+.chk_wrap02 .chk_lb02 {position:relative; display:block; width:auto; height:14px; line-height:15px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_off.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
+.chk_wrap02 .chk_input02:checked ~ .chk_lb02 {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_on.png) no-repeat left center; background-size:14px 14px;}
 
 /*
  ** 방부장 기본 css **
@@ -136,6 +137,11 @@ td,th {padding:0;}
 .list_card .list_intro .bot_line .intro_option{width:100%; height:15px; clear:both; padding-top:5px; overflow:hidden;}
 .list_card .list_intro .bot_line .intro_time{width:60px; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; text-align:center;}
 .list_card .list_intro .bot_line .intro_roca{width:auto; height:27px; line-height:27px; font-size:13px; color:#5b636b; float:left; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/ico_rocation.png) no-repeat 5px center; background-size:9px 11px;}
+
+/* 관리 버튼 */
+.list_card .list_intro .admin{position:absolute; bottom:5px; right:5px; width:auto; height:auto;}
+.list_card .list_intro .admin:after{content:""; display:block; clear:both;}
+.list_card .list_intro .admin a{float:left; width:auto; height:100%; padding:0 3px; font-size:13px;}
 
 /* 내글 버튼 */
 .list_card .my_line{width:100%; height:auto; border-top:1px solid #dfdfdf;}
