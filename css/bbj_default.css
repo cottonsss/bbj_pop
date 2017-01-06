@@ -78,15 +78,21 @@ td,th {padding:0;}
              */
 /* 기본 체크박스(회색배경 > 파란배경 하얀체크) */
 .chk_wrap {position:relative;}
-.chk_wrap .chk_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap .chk_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0; cursor:pointer;}
 .chk_wrap .chk_lb {position:relative; display:inline-block; width:auto; height:22px; line-height:23px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_off.png) no-repeat left center; background-size:22px 22px; vertical-align:middle;}
 .chk_wrap .chk_input:checked ~ .chk_lb {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk_on.png) no-repeat left center; background-size:22px 22px;}
 
 /* 기본 체크박스(하얀배경 > 파란배경 하얀체크) */
 .chk_wrap02 {position:relative;}
-.chk_wrap02 .chk_input02 {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0;}
+.chk_wrap02 .chk_input02 {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0; cursor:pointer;}
 .chk_wrap02 .chk_lb02 {position:relative; display:block; width:auto; height:14px; line-height:15px; padding-left:20px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_off.png) no-repeat left center; background-size:14px 14px; vertical-align:middle;}
 .chk_wrap02 .chk_input02:checked ~ .chk_lb02 {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_chk02_on.png) no-repeat left center; background-size:14px 14px;}
+
+/* 기본 라디오버튼(회색배경 > 흰배경 파란원) */
+.rdo_wrap {position:relative;}
+.rdo_wrap .rdo_input {position:absolute; z-index:1; top:0; left:0; display:block; width:100%; height:100%; opacity:0; cursor:pointer;}
+.rdo_wrap .rdo_lb {position:relative; display:inline-block; width:auto; height:23px; line-height:24px; padding-left:30px; background:url(http://image.club5678.com/imgs/bbjang/img01/btn_rdo_off.png) no-repeat left center; background-size:23px 23px; vertical-align:middle;}
+.rdo_wrap .rdo_input:checked ~ .rdo_lb {background:url(http://image.club5678.com/imgs/bbjang/img01/btn_rdo_on.png) no-repeat left center; background-size:23px 23px;}
 
 /*
  ** 방부장 기본 css **
@@ -95,7 +101,9 @@ td,th {padding:0;}
 .pd_50 {padding-bottom:50px;}
 .full_page{width:100%;}
 
-#header {position:relative; z-index:1000; top:0; left:0; right:0; display:block; width:100%;}
+#header {z-index:1000; top:0; left:0; display:block; width:100%;}
+.header_r{position:relative;}
+.header_f{position:fixed;}
 .ht_50 {height:50px;}
 .ht_45 {height:45px;}
 #header .btn_back{position:absolute; top:0; left:0; z-index:1; width:40px; height:100%;}
@@ -112,7 +120,7 @@ td,th {padding:0;}
  ** 방부장 공통 리스트
           */
 .content_list{position:relative; width:100%; height:auto;}
-.list_card{position:relative; width:calc(100% - 5px); height:auto; margin:0 auto; box-shadow:1px 3px 5px #d7d7d7;}
+.list_card{position:relative; width:calc(100% - 5px); height:auto; margin:0 auto; box-shadow:0px 10px 10px #d7d7d7;}
 
 /* 사진터치 구분 영역 */
 .list_card .list_photo_wrap{position:absolute; top:10px; left:8px; width:95px; height:70px; overflow:hidden;}
