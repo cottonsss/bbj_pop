@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* CSS Document */
 /* 팝업 픽스 */
 .pop_wrap {position:fixed; top:0; bottom:0; left:0; right:0; z-index:999; width:100%; height:100%;}
 /* 팝업배경 */
@@ -15,12 +14,13 @@
 .mt_115{margin-top:-115px;}
 .mt_100 {margin-top:-100px;}
 .mt_160 {margin-top:-160px;}
+.mt_180 {margin-top:-180px;}
 .mt_200 {margin-top:-200px;}
 
 .rd_2{border-radius:4px;}
 .shadow{box-shadow:1px 3px 5px #7c7c7c;}
 
-/*--------------------------------------------------- 공통알림창 ---------------------------------------------------*/
+/*--------------------------------- 공통알림창 ---------------------------------*/
 /* 알림창 헤더 */
 .pop_common_h{position:relative; width:100%; height:35px; line-height:36px; background-color:#f2f2f2; border-bottom:1px solid #dcdcdc;}
 .pop_common_h h2{width:100%; height:100%; color:#555555; text-align:center; font-size:15px; font-weight:400; letter-spacing:3px;}
@@ -36,8 +36,9 @@
 .pop_common_bot .pop_btn_2ea:last-of-type{border-left:1px solid #dcdcdc; box-sizing:border-box;}
 .pop_common_bot .pop_btn_1ea a, .pop_common_bot .pop_btn_2ea a{display:block; width:100%; height:100%; color:#0b99e0; text-align:center;}
 .pop_common_bot .pop_btn_1ea a:active, .pop_common_bot .pop_btn_2ea a:active{background-color:#eaf5fa;}
+/*--------------------------------- 공통알림창 ---------------------------------*/
 
-/*--------------------------------------------------- 허위매물 신고하기 ---------------------------------------------------*/
+/*--------------------------------- 허위매물 신고하기 ---------------------------------*/
 /* 신고하기 헤더 */
 .pop_report_h{position:relative; width:100%; height:50px; line-height:50px;}
 .pop_report_h h2{position:relative; width:100%; height:100%; text-align:center; font-size:24px;}
@@ -61,8 +62,9 @@
 .pop_report_bot .pop_btn_report{width:100%; height:50px; line-height:51px; background-color:#2ea5f0;}
 .pop_report_bot .pop_btn_report a{display:block; width:100%; height:100%; text-align:center; color:#fff; font-size:21px;}
 .pop_report_bot .pop_btn_report a:active{background:rgba(0,0,0,0.05);}
+/*--------------------------------- 허위매물 신고하기 ---------------------------------*/
 
-/*--------------------------------------------------- 상담메시지 ---------------------------------------------------*/
+/*--------------------------------- 상담메시지 ---------------------------------*/
 /* 메시지 헤더 */
 .pop_msg_h{position:relative; width:100%; height:40px; line-height:40px; box-shadow:inset 0 2px 2px #52bff6;}
 .pop_msg_h h2{position:relative; width:100%; height:100%; color:#fff; text-align:center; font-weight:400; font-size:17px;}
@@ -88,7 +90,7 @@
 .pop_msg_bot .pop_btn_clse a{color:#999999;}
 .pop_msg_bot .pop_btn_on a{color:#1f9cea;}
 .pop_msg_bot .pop_btn_clse a:active, .pop_msg_bot .pop_btn_on a:active{background:rgba(0,0,0,0.05);}
-/*--------------------------------------------------- 상담메시지 ---------------------------------------------------*/
+/*--------------------------------- 상담메시지 ---------------------------------*/
 
 /*--------------------------------- 방법선택폼 ---------------------------------*/
 ul.pop_slct_mtd {position:relative; height:auto; overflow:auto;}
